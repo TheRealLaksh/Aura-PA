@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <AppShell>
+    <AppShell showBottomNav={false}>
       <div className="flex flex-1 flex-col justify-center">
         <p className="text-sm text-muted-foreground">
           Welcome to
@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-4 text-lg text-muted-foreground">
-          Adaptive University & Routine Assistant
+          Adaptive University &amp; Routine Assistant
         </p>
 
         <div className="mt-10 rounded-3xl border bg-card p-6">
