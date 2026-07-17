@@ -1,38 +1,37 @@
+import { AppShell } from "@/components/layout/app-shell";
+import { Button } from "@/components/ui/button";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white">
-      <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6">
+    <AppShell>
+      <div className="flex flex-1 flex-col justify-center">
+        <p className="text-sm text-muted-foreground">
+          Welcome to
+        </p>
 
-        <div className="mb-10">
-          <p className="text-sm text-zinc-400">
-            Welcome to
-          </p>
+        <h1 className="mt-2 text-6xl font-bold tracking-tight">
+          AURA
+        </h1>
 
-          <h1 className="mt-2 text-6xl font-bold tracking-tight">
-            AURA
-          </h1>
+        <p className="mt-4 text-lg text-muted-foreground">
+          Adaptive University & Routine Assistant
+        </p>
 
-          <p className="mt-4 text-lg text-zinc-300">
-            Adaptive University & Routine Assistant
-          </p>
-        </div>
-
-        <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-6">
+        <div className="mt-10 rounded-3xl border bg-card p-6">
           <h2 className="text-xl font-semibold">
             Your Personal AI Assistant
           </h2>
 
-          <p className="mt-3 text-zinc-400">
-            Organize your college life, track expenses, manage your schedule,
-            and let AI handle the rest.
+          <p className="mt-3 text-sm text-muted-foreground">
+            Organize your college life, manage your schedule, track expenses,
+            and let AI handle everything else.
           </p>
 
-          <button className="mt-8 w-full rounded-2xl bg-white px-4 py-3 font-semibold text-black transition hover:bg-zinc-200">
+          <Button className="mt-8 w-full rounded-2xl">
             Get Started
-          </button>
+          </Button>
         </div>
-
       </div>
-    </main>
+    </AppShell>
   );
 }
